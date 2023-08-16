@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+        :root{
+            --purple: hsl(259, 100%, 65%);
+            --big: 32px;
+            --bigger: 100px;
+            --off-white:hsl(0, 0%, 94%);
+            --white:hsl(0, 0%, 100%);
+            --Light-grey: hsl(0, 0%, 86%);
+            --Smokey-grey: hsl(0, 1%, 44%);
+            }
+            body{
+                background-color: var(--off-white);
+                font-family: 'Poppins', sans-serif;
+            }
+
+        .main{
+            background-color:var(--white) ;
+            width: 40%;
+            padding-left: 30px;
+            border-radius: 40px;
+            border-bottom-right-radius:200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        #all{
+            padding: 2%;
+            width: 100%;
+        }
+        .container {
+            width: 80%;
+            color: var(--Smokey-grey);
+        }
+
+        .sectionA {
+            display: grid;
+            gap: 0;
+            grid-template-columns: repeat(3,  1fr);
+            width: 85% ;
+        }
+        form{
+            display: flex;
+            padding-bottom: 20px;
+            justify-content: space-between;
+            grid-column: span 3;
+            width: 88%;
+        }
+        h4{
+            width: 33%; 
+            margin:0.5em ;
+            margin-left: 0;
+        }
+        input{
+            width: 20%;
+            padding:10px ;
+            border: 1px solid var(--Light-grey);
+            border-radius: 10px;
+            color: var(--Smokey-grey);
+            font-size: var(--big); 
+        }
+        img{
+            width: 6%;
+            background-color: var(--purple) ;
+            border-radius: 3em;
+            padding: 1em;
+        }
+        .flex{
+            display: flex;
+            align-items: center;   
+        }
+        hr{
+            width: 80%;
+            margin: 0;
+            padding: 0;
+            color: var(--Light-grey);
+            
+        }
+        .txt{
+            font-size: var(--bigger);
+            line-height: 1.1;
+
+
+        }
+        .text{
+            color: var(--purple);
+            font-size: var(--bigger);
+            width: 100%;
+
+        }
+        p,strong, span{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div id="all">
+            <div class="container"> 
+                <div class="sectionA">
+                    <h4 id="date">DAY</h4>
+                    <h4 id="month">MONTH</h4>
+                    <h4 id="year">YEAR</h4>
+                    <form>
+                        <input id="inputDD" type="number" name="" placeholder="DD" required>
+                        <input id="inputMM" type="number" name="" placeholder="MM" required>
+                        <input id="inputYY" type="number" name="" placeholder="YYYY" required>
+                    </form>
+                </div>
+            </div>
+            <div class="flex">
+                <hr/>
+                <button class="btn"><img src="assets/images/icon-arrow.svg" alt="an image representing a button"/></button>
+            </div>
+            <div class="txt">
+                <p><i><strong><span id="yr" class="text">--</span> years</strong></i></p>
+                <p><i><strong><span id="mnth" class="text">--</span> months</strong></i></p>
+                <p><i><strong><span id="dy" class="text">--</span> days</strong></i></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

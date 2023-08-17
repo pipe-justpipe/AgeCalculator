@@ -16,6 +16,7 @@ const yy = todayDate.getFullYear();
 
 console.log(dd, mm, yy);
 
+
 /*inputDD.addEventListener('input', (event) => 
 {let valDD = event.target.value;
     date.textContent= valDD;

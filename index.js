@@ -34,9 +34,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
          inputDD = parseInt(document.querySelector('#inputDD').value);
          inputMM = parseInt(document.querySelector('#inputMM').value);
          inputYY = parseInt(document.querySelector('#inputYY').value);
-
-
-
          
 
             const dd = todayDate.getDate();
@@ -58,7 +55,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
             if (inputDD < 1 || inputDD > 31 ){
                 invalid.textContent = "Must be a valid date";
-
                 return
         
             }
@@ -71,24 +67,19 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 month.textContent =  "--";
                 year.textContent =  "--";
                 return
-        
             }   
-            
 
             if (inputDD <1 && inputMM <1 ){
                 invalid.textContent = "Must be a valid date";
                 invalides.textContent = "Must be a valid date";
-
                 return
             }
             
-      
-
             if(inputDD < 1 || inputDD > 31 && inputMM < 1 || inputMM >12) {
                 invalid.textContent = "Must be a valid date";
                 invalides.textContent = "Must be a valid date";
+                return 
             }
-
 
             if(!inputDD && !inputMM && !inputYY) {
                 invalid.textContent = "This field is required";
@@ -119,7 +110,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     
             if (!inputDD){
                 invalid.textContent = "This field is required";
-
                 return
             }
             if(!inputMM) {
@@ -133,14 +123,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
             if(inputDD.toString().length > 2){
                 invalid.textContent = "Must bb a valid date";
-
                 return
             }
 
             if( inputMM.toString().length > 2){
                 invalides.textContent = "Must bb a valid date";
                 return
-
             }
 
             
@@ -160,9 +148,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
             if (inputYY < 1800 || inputYY > yy ) {
-
                 invalider.textContent = "Must be a valid date";
-
                 return
             }   
 
@@ -177,46 +163,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 invalid.textContent = "Must be a valid date";
                 invalides.textContent = "Must be a valid date";
                 invalider.textContent = "Must be a valid date";
-
                 return
             }  
 
             if(inputMM == 2 && inputDD > 28 ){
                 invalid.textContent = "Must bb a valid date";
-
-                date.textContent = "--";
-                month.textContent =  "--";
-                year.textContent =  "--";
                 return
             }
 
             if(inputYY.toString().length !== 4){
                 invalider.textContent = "Must bb a valid date";
-
-                date.textContent = "--";
-                month.textContent =  "--";
-                year.textContent =  "--";
                 return
-
             }
-
-
-
-
 
             invalid.textContent = "";
             invalides.textContent = "";
             invalider.textContent = "";
 
-
-
            calculateAge(ageDays, ageMonths, ageYears)
         } ; 
 
         validation();
-
- 
-
 
 
         function calculateAge(ageDays, ageMonths, ageYears){

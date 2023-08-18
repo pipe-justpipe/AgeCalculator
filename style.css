@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --big: 32px;
+    --bigger: 100px;
+    --off-white: hsl(0, 0%, 94%);
+    --white: hsl(0, 0%, 100%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+}
+
+body {
+    background-color: var(--off-white);
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    background-color:var(--white) ;
+    width: 40%;
+    padding-left: 30px;
+    border-radius: 40px;
+    border-bottom-right-radius:200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+#all{
+    padding: 2%;
+    width: 100%;
+}
+
+.container {
+    width: 100%; /* Adjust width for responsiveness */
+    color: var(--Smokey-grey);
+}
+
+
+.sectionA {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3,  1fr);
+    width: 85% ;
+}
+
+form {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    grid-column: span 3;
+    width: 88%;
+}
+
+/* Adjust input width for responsiveness */
+input {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid var(--Light-grey);
+    border-radius: 10px;
+    color: var(--Smokey-grey);
+    font-size: var(--big);
+}
+
+input:hover {
+    border: 1px solid var(--purple);
+    color: black;
+    cursor: pointer;
+}
+
+img{
+    width: 6%;
+    background-color: var(--purple) ;
+    border-radius: 3em;
+    padding: 1em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+}
+.btn {
+    width: 6%;
+    /Adjustwidthforresponsiveness/background-color: var(--purple);
+    border-radius: 3em;
+    padding: 1em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+}
+
+.btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--Light-grey);
+}
+
+.txt {
+    font-size: var(--bigger);
+    line-height: 1.1;
+}
+
+.text {
+    color: var(--purple);
+    font-size: var(--bigger);
+    width: 100%;
+}
+
+p,
+strong,
+span {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Small Screens */
+@media (max-width: 576px) {
+    .main {
+        width: 90%;
+        height: 70vh; /* Increase height for smaller screens */
+        margin: 20% auto;
+    }
+
+    form{
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        grid-column: span 3;
+        width: 100%;
+    }
+
+    h4 {
+        width: 100%;
+        margin:0.5em ;
+        margin-left: 0;
+    }
+    
+    input{
+        width: 40%;
+        padding:10px ;
+        border: 1px solid var(--Light-grey);
+        border-radius: 10px;
+        color: var(--Smokey-grey);
+        font-size: var(--big);
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
+    /* Adjust font sizes for smaller screens */
+    .txt,
+    .text {
+        font-size: 60px;
+    }
+
+    /* Adjust font size for smaller screens */
+    .sectionA h4 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 840px) {
+    .main {
+        width: 90%;
+        height: 80vh; /* Increase height for smaller screens */
+        margin: 20% auto;
+    }
+
+    form{
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        grid-column: span 3;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust font sizes for smaller screens */
+  
+    .txt,
+    .text {
+        font-size: 80px;
+    }
+
+    /* Adjust font size for smaller screens */
+    
+        .sectionA {
+            display: grid;
+            gap: 0;
+            grid-template-columns: repeat(3,  1fr);
+            width: 85% ;
+            margin-left: 10px;
+            margin-right: auto;
+        }
+    
+    h4 {
+        width: 65%;
+        margin:0.5em ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (min-width: 1096px) and (max-width: 1496px) {
+    .main {
+        width: 60%;
+        height: auto; /* Increase height for smaller screens */
+        margin: 20% auto;
+    }
+
+    /* Adjust font sizes for smaller screens */
+  
+    .txt,
+    .text {
+        font-size: var(--bigger);
+    }
+
+    /* Adjust font size for smaller screens */
+    .sectionA h4 {
+        width: 100%;
+    }
+}
+
+
+
+/* Large Screens */
+@media (min-width: 840px) and (max-width:1096px) {
+    /* Additional styles for large screens */
+    .main{
+        background-color:var(--white) ;
+        width: 80%;
+        padding-left: 30px;
+        border-radius: 40px;
+        border-bottom-right-radius:200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 60vh;
+        padding-bottom: 0;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
+    #all{
+        padding: 2%;
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        color: var(--Smokey-grey);
+    }
+    
+    .sectionA {
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(3,  1fr);
+        width: 85% ;
+    }
+    form{
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        grid-column: span 3;
+        width: 88%;
+    }
+
+    input{
+        width: 20%;
+        padding:10px ;
+        border: 1px solid var(--Light-grey);
+        border-radius: 10px;
+        color: var(--Smokey-grey);
+        font-size: var(--big);
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
+    /* Adjust font sizes for large screens */
+
+    
+    .txt,
+    .text {
+        font-size: 90px;
+    }
+    input{
+        font-size: var(--big);
+    }
+    h4{
+        width: 33%; 
+        margin:0.5em ;
+        margin-left: 0;
+    }
+    
+    img{
+        width: 2%;
+        background-color: var(--purple) ;
+        border-radius: 3em;
+        padding: 1em;
+    }
+}

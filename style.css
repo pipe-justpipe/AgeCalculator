@@ -132,11 +132,15 @@ span {
 @media (max-width: 576px) {
     .main {
         width: 90%;
-        height: 50vh; /* Increase height for smaller screens */
-        margin: 30% auto;
+        height: 50vh;
+        /*Increaseheightforsmallerscreens*/margin: 25% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
-    }
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+}
 
     form{
         display: flex;
@@ -164,11 +168,16 @@ span {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
 }
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 hr{
     width: 65%;
 }
 img{
-    left: 50%;
+    margin-top: 10px;
 }
     /* Adjust font sizes for smaller screens */
     .txt,

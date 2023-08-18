@@ -161,10 +161,6 @@ span {
         -o-border-radius: 40px;
 }
 
-    .all{
-        width: 90%;
-        margin-left: 50px;
-    }
     .flex {
     display: flex;
     position: relative;
@@ -177,7 +173,7 @@ span {
     display: block;
     position: absolute;
     align-self: center;
-    width: 100%;
+    width: 80%;
     margin: 0;
     padding: 0;
     color: var(--Light-grey);
@@ -195,7 +191,7 @@ span {
     justify-content: space-between;
     grid-column: span 3;
     place-items: start;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     }
@@ -207,8 +203,8 @@ span {
     }
 
     input{
-    width: 18%;
-    padding:5px ;
+    width: 15%;
+    padding:0px;
     border: 1px solid var(--Light-grey);
     border-radius:10px;
     color: var(--Smokey-grey);
@@ -217,16 +213,14 @@ span {
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
-    }
+}
 
     .txt,
     .text {
     font-size: 50px;
     }
 
-    .sectionA h4 {
-    width: 100%;
-    }
+
 }
 
 @media (min-width: 577px) and (max-width: 840px) {

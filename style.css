@@ -161,6 +161,10 @@ span {
         -o-border-radius: 40px;
 }
 
+    .all{
+        width: 90%;
+        margin-left: 50px;
+    }
     .flex {
     display: flex;
     position: relative;
@@ -191,7 +195,7 @@ span {
     justify-content: space-between;
     grid-column: span 3;
     place-items: start;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     }
@@ -202,19 +206,13 @@ span {
 
     }
 
-    h4 {
-    width: 15%;
-    margin:0.8em ;
-    margin-left: 0;
-    }
-
     input{
     width: 18%;
-    padding:10px ;
+    padding:5px ;
     border: 1px solid var(--Light-grey);
     border-radius:10px;
     color: var(--Smokey-grey);
-    font-size: 15px;
+    font-size: 4px;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     -ms-border-radius:10px;

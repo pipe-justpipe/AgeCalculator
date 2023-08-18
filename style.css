@@ -133,7 +133,7 @@ span {
     .main {
         width: 90%;
         height: 50vh; /* Increase height for smaller screens */
-        margin: 20% auto;
+        margin: 20% auto 20% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
     }
@@ -147,13 +147,13 @@ span {
     }
 
     h4 {
-        width: 100%;
+        width: 25%;
         margin:0.5em ;
         margin-left: 0;
     }
     
     input{
-        width: 40%;
+        width: 25%;
         padding:10px ;
         border: 1px solid var(--Light-grey);
         border-radius: 10px;

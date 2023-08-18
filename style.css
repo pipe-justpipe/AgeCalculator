@@ -155,8 +155,11 @@ span {
         margin: 25% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
-    
-    }
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+}
 
     .flex {
     display: flex;
@@ -181,10 +184,7 @@ span {
     top: 0;
     }
 
-    .all{
-    width: 70%;
-    margin-left: 80px;
-    }
+  
     form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -192,7 +192,9 @@ span {
     justify-content: space-between;
     grid-column: span 3;
     place-items: start;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     label{
@@ -208,7 +210,7 @@ span {
     }
 
     input{
-    width: 15%;
+    width: 20%;
     padding:10px ;
     border: 1px solid var(--Light-grey);
     border-radius:10px;
@@ -225,7 +227,7 @@ span {
     font-size: 50px;
     }
 
-    .sectionA {
+    .sectionA h4 {
     width: 100%;
     }
 }

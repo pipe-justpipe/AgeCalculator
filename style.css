@@ -99,10 +99,10 @@ input:hover {
     background-color: var(--purple);
     border-radius: 3em;
     padding: 1em;
-    -webkit-border-radius: 3em;
-    -moz-border-radius: 3em;
-    -ms-border-radius: 3em;
-    -o-border-radius: 3em;
+    /* -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:; */
 }
 
 .btn:hover {
@@ -153,12 +153,19 @@ span {
         width: 90%;
         height: auto;
         margin: 25% auto;
-        border-radius: 40px;
+        border-radius: 20px;
         border-bottom-right-radius:100px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
+        /*-webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        -webkit-border-radius: 20px;*/
+}
+.container{
+    width: 100%;
+}
+.sectionA{
+    width: 90%;
 }
 
     .flex {
@@ -188,12 +195,13 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     grid-column: span 3;
     place-items: start;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
     }
 
     label{
@@ -209,10 +217,10 @@ span {
     border-radius:5px;
     color: var(--Smokey-grey);
     font-size: 4px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    /* -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:; */
 }
 
     .txt,
@@ -226,18 +234,32 @@ span {
 @media (min-width: 577px) and (max-width: 840px) {
     .main {
         width: 90%;
-        height: auto; 
-        margin: 20% auto;
+        height: auto;
+        margin: 25% auto;
+        border-radius: 20px;
+        border-bottom-right-radius:100px;
+        /* -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px; */
+}
+    .container {
+        width: 100%;
+    }
+    .sectionA {
+        width: 90%;
     }
 
     form {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding-bottom: 20px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         grid-column: span 3;
         place-items: start;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     label{
@@ -250,15 +272,6 @@ span {
     .text {
         font-size: 80px;
     }
-    
-        .sectionA {
-            display: grid;
-            gap: 0;
-            grid-template-columns: repeat(3,  1fr);
-            width: 75% ;
-            margin-left: 10px;
-            margin-right: auto;
-        }
     
     h4 {
         width: 65%;

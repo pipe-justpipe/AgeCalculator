@@ -52,7 +52,7 @@ form {
     justify-content: space-between;
     grid-column: span 3;
     place-items: start;
-    width: ;
+    width: 100%;
 }
 
 label{
@@ -110,14 +110,15 @@ input:hover {
 }
 
 .flex {
+    width: 90%;
+    margin: 0;
     display: flex;
+    
     align-items: center;
 }
 
 hr {
-    width: 80%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     color: var(--Light-grey);
 }
 
@@ -153,9 +154,37 @@ span {
         margin: 25% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
-
+    
 }
 
+.flex {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+    height: 55px;
+}
+
+
+hr {
+    display: block;
+    position: absolute;
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--Light-grey);
+}
+
+img{
+    position: absolute;
+    top: 0;
+}
+
+.all{
+    width: 70%;
+    margin-left: 80px;
+}
 form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -189,22 +218,6 @@ label{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
-.flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: -1px;
-}
-hr {
-    width: 80%;
-    margin: 0;
-    padding: 0;
-    color: var(--Light-grey);
-}
-
-img{
-    top: 30px;
 }
     /* Adjust font sizes for smaller screens */
     .txt,

@@ -52,6 +52,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
             const invalid = document.querySelector('#invalid');
             const invalides = document.querySelector('#invalides');
             const invalider = document.querySelector('#invalider');
+            
+            if (inputDD <1 &&  inputMM <1 && inputYY <1){
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                invalider.textContent = "Must be a valid date";
+                return
+            }
+
+            if (inputDD <1 && inputMM <1 ){
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                return
+            }
+
+            
+            if (inputMM <1 && inputYY <1 ){
+                invalides.textContent = "Must be a valid date";
+                invalid.textContent = "Must be a valid date";
+                return
+            }
+            
 
             if (inputDD < 1 || inputDD > 31 ){
                 invalid.textContent = "Must be a valid date";
@@ -167,6 +188,26 @@ document.addEventListener('DOMContentLoaded', ()=> {
             }  
 
             if(inputMM == 2 && inputDD > 28 ){
+                invalid.textContent = "Must bb a valid date";
+                return
+            }
+
+            if(inputMM == 4 && inputDD > 30 ){
+                invalid.textContent = "Must bb a valid date";
+                return
+            }
+
+            if(inputMM == 9 && inputDD > 30 ){
+                invalid.textContent = "Must bb a valid date";
+                return
+            }
+
+            if(inputMM == 6 && inputDD > 30 ){
+                invalid.textContent = "Must bb a valid date";
+                return
+            }
+
+            if(inputMM == 11 && inputDD > 30 ){
                 invalid.textContent = "Must bb a valid date";
                 return
             }

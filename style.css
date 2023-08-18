@@ -52,7 +52,7 @@ form {
     justify-content: space-between;
     grid-column: span 3;
     place-items: start;
-    width: 100%;
+    width: ;
 }
 
 label{

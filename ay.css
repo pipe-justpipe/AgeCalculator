@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --big: 32px;
+    --bigger: 100px;
+    --off-white:hsl(0, 0%, 94%);
+    --white:hsl(0, 0%, 100%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+    --Light-red: hsl(0, 100%, 67%);
+    --weightl: 400i;
+    --weighth: 700;
+    --weighthh: 800;
+
+}
+
+body {
+    background-color: var(--off-white);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#all {
+    padding: 2%;
+    width: max(340px, 40%);
+    background-color:var(--white) ;
+    padding-inline: 20px;
+    border-radius: 40px;
+    border-bottom-right-radius:200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    color: var(--Smokey-grey);
+}
+
+.sectionA {
+    display: grid;
+            gap: 0;
+            grid-template-columns: repeat(3,  1fr);
+            width: max(85%) ;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    justify-content: space-between;
+    grid-column: span 3;
+    place-items: start;
+    width: 100%;
+}
+
+label{
+    width: max(33%); 
+    margin:0.5em 0;
+    
+}
+.input{
+    width: 70%;
+    padding:10px ;
+    border: 1px solid var(--Light-grey);
+    border-radius: 10px;
+    color: var(--Smokey-grey);
+    font-size: var(--big); 
+}
+
+.inputError{
+    border: 1px solid var(--Smokey-grey);
+}
+
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+    position: relative;
+}
+
+
+hr{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    color: var(--Light-grey);
+    
+}
+.btn{
+    border-radius: 100%;
+    border: none;
+    width: 5%;
+    background-color: var(--purple) ;
+    padding: 1em;
+    z-index: 2;
+}
+.txt{
+    font-size: var(--bigger);
+    line-height: 1.1;
+
+
+}
+
+.text{
+    color: var(--purple);
+    font-size: var(--bigger);
+    width: max(100%);
+
+}
+p,strong, span{
+    margin: 0;
+    padding: 0.1em;
+    margin-bottom: 0;
+    font-weight: var(--weighthh);
+}
+
+.span{
+    color: var(--Light-red);
+}
+/** Hover Effects at necessary parts of the UI **/
+
+.btn:hover{
+    background: var(--off-black);
+}
+
+.input:active {
+    border: 1.5px solid var(--purple);
+}
+/* Rest of your styles */
+
+/* Hover Effects and other styles */
+
+/* Media Queries */
+
+/* Mobile devices */
+@media (max-width: 450px) {
+    .flex {
+        justify-content: center;
+    }
+    .flex::after {
+        /* Your styles */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .sectionA {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .txt {
+        font-size: 45px;
+        line-height: 1.1;
+    }
+
+    /* Additional styles specific to mobile devices */
+}
+
+/* Small to medium devices */
+@media (min-width: 451px) and (max-width: 780px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionA {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .txt {
+        font-size: 45px;
+        line-height: 1.1;
+    }
+
+    /* Additional styles specific to small to medium devices */
+}
+
+/* Larger devices */
+@media (min-width: 781px) {
+    .flex::after {
+        /* Your styles */
+    }
+
+    .text,
+    .txt {
+        font-size: 60px;
+    }
+
+    /* Additional styles specific to larger devices */
+}

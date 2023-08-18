@@ -9,21 +9,21 @@
 <body>
     <div class="main">
       <div id="all">
-            <div class="container"> 
-                <div class="sectionA">
-                    <h4 id="date">DAY</h4>
-                    <h4 id="month">MONTH</h4>
-                    <h4 id="year">YEAR</h4>
-                    <form>
-                        <input id="inputDD" type="number" placeholder="DD" required>
-                        <input id="inputMM" type="number"  placeholder="MM" required>
-                        <input id="inputYY" type="number" placeholder="YYYY" required>
-                    </form>
-                    <span id="invalid"></span>
-                    <span id="invalides"></span>
-                    <span id="invalider"></span>
-                </div> 
+        <div class="container"> 
+            <div class="sectionA">
+                <form>
+                    <label for="inputDD">DAY</label>
+                    <label for="inputMM">MONTH</label>
+                    <label for="inputYY">YEAR</label>
+                    <input id="inputDD" class="input inputError" type="number" min="1" max="31" maxlength="2" minlength="2" placeholder="DD" required>
+                    <input id="inputMM" class="input inputError" type="number" min="1" max="12" maxlength="2" minlength="2" placeholder="MM" required>
+                    <input id="inputYY" class="input inputError" type="number" min="1900" max="2023" maxlength="4" minlength="4" placeholder="YYYY" required>
+                </form>
+                <span id="invalid" class="span"></span>
+                <span id="invalides" class="span"></span>
+                <span id="invalider" class="span"></span>
             </div>
+        </div>
             <div class="flex">
                 <hr/>
                 <img src="assets/images/icon-arrow.svg" class="btn" alt="an image representing a button"/>

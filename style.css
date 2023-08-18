@@ -3,7 +3,7 @@
 :root {
     --purple: hsl(259, 100%, 65%);
     --big: 32px;
-    --bigger: 100px;
+    --bigger: 90px;
     --off-white: hsl(0, 0%, 94%);
     --white: hsl(0, 0%, 100%);
     --Light-grey: hsl(0, 0%, 86%);
@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-    width: 100%; /* Adjust width for responsiveness */
+    width: 100%; 
     color: var(--Smokey-grey);
 }
 
@@ -46,21 +46,32 @@ body {
 }
 
 form {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
     justify-content: space-between;
     grid-column: span 3;
-    width: 95%;
+    place-items: start;
+    width: 100%;
 }
 
-/* Adjust input width for responsiveness */
-input {
-    width: 25%;
-    padding: 10px;
+label{
+    width: max(33%); 
+    margin:0.5em 0;
+    
+}
+
+.input{
+    width: 70%;
+    padding:10px ;
     border: 1px solid var(--Light-grey);
     border-radius: 10px;
     color: var(--Smokey-grey);
     font-size: var(--big);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 h4{
@@ -74,16 +85,12 @@ input:hover {
     color: black;
     cursor: pointer;
 }
+.input:active {
+    border: 1.5px solid var(--purple);
+}
 
-img{
-    width: 6%;
-    background-color: var(--purple) ;
-    border-radius: 3em;
-    padding: 1em;
-    -webkit-border-radius: 3em;
-    -moz-border-radius: 3em;
-    -ms-border-radius: 3em;
-    -o-border-radius: 3em;
+.inputError{
+    border: 1px solid var(--Smokey-grey);
 }
 
 .btn {
@@ -133,6 +140,9 @@ span {
     margin-bottom: 0;
 }
 
+.span{
+    color: var(--Light-red);
+}
 /* Media Queries for Different Screen Sizes */
 
 /* Small Screens */
@@ -140,19 +150,27 @@ span {
     .main {
         width: 90%;
         height: auto;
-        /*Increaseheightforsmallerscreens*/margin: 25% auto;
+        margin: 25% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
 
 }
 
-    form{
-        display: flex;
-        padding-bottom: 20px;
-        justify-content: space-between;
-        grid-column: span 3;
-        width: 100%;
-    }
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    justify-content: space-between;
+    grid-column: span 3;
+    place-items: start;
+    width: 100%;
+}
+
+label{
+    width: max(33%); 
+    margin:0.5em 0;
+    
+}
 
     h4 {
         width: 20%;
@@ -208,14 +226,20 @@ img{
         margin: 20% auto;
     }
 
-    form{
-        display: flex;
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         padding-bottom: 20px;
         justify-content: space-between;
         grid-column: span 3;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        place-items: start;
+        width: 100%;
+    }
+    
+    label{
+        width: max(33%); 
+        margin:0.5em 0;
+        
     }
 
     /* Adjust font sizes for smaller screens */
@@ -281,10 +305,7 @@ img{
 }
 
 
-
-/* Large Screens */
 @media (min-width: 840px) and (max-width:1096px) {
-    /* Additional styles for large screens */
     .main{
         background-color:var(--white) ;
         width: 80%;
@@ -313,12 +334,20 @@ img{
         grid-template-columns: repeat(3,  1fr);
         width: 75% ;
     }
-    form{
-        display: flex;
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         padding-bottom: 20px;
         justify-content: space-between;
         grid-column: span 3;
-        width: 88%;
+        place-items: start;
+        width: 100%;
+    }
+    
+    label{
+        width: max(33%); 
+        margin:0.5em 0;
+        
     }
 
     input{
@@ -328,9 +357,11 @@ img{
         border-radius: 10px;
         color: var(--Smokey-grey);
         font-size: var(--big);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
 }
-    /* Adjust font sizes for large screens */
-
     .txt,
     .text {
         font-size: 90px;

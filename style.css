@@ -132,8 +132,10 @@ span {
 @media (max-width: 576px) {
     .main {
         width: 90%;
-        height: 65vh; /* Increase height for smaller screens */
+        height: 50vh; /* Increase height for smaller screens */
         margin: 20% auto;
+        border-radius: 40px;
+        border-bottom-right-radius:100px;
     }
 
     form{
@@ -166,8 +168,6 @@ span {
     .txt,
     .text {
         font-size: 50px;
-        color: purple;
-        text-decoration: line-through;
         
     }
 

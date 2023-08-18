@@ -20,8 +20,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
     document.querySelector('#inputMM').value = localStorage.getItem("inputMM")
     document.querySelector('#inputYY').value = localStorage.getItem("inputYY")
 
-    
-   
+    date.textContent = "--";
+    month.textContent =  "--";
+    year.textContent =  "--";
+
     
 
 
@@ -53,40 +55,154 @@ document.addEventListener('DOMContentLoaded', ()=> {
             const invalid = document.querySelector('#invalid');
             const invalides = document.querySelector('#invalides');
             const invalider = document.querySelector('#invalider');
-    
-            if (!inputDD || !inputMM || !inputYY){
+
+            if (inputDD < 1 || inputDD > 31 ){
                 invalid.textContent = "Must be a valid date";
-                invalides.textContent = "Must be a valid date";
-                invalider.textContent = "Must be a valid date";
 
-
-                date.textContent = "--";
-                month.textContent =  "--";
-                year.textContent =  "--";
                 return
-
+        
             }
-            if (inputDD < 1|| inputMM < 1 || inputDD > 31  || inputMM > 12 ){
-                invalid.textContent = "Must aa a valid date";
-                invalides.textContent = "Must aa a valid date";
 
+            if (inputMM < 1 || inputMM > 12) {
+
+                invalides.textContent = "Must be a valid date";
 
                 date.textContent = "--";
                 month.textContent =  "--";
                 year.textContent =  "--";
                 return
         
+            }   
+            
+
+            if (inputDD <1 && inputMM <1 ){
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+
+                return
             }
             
-            if(inputMM === 2 && inputDD > 28 ){
+      
+
+            if(inputDD < 1 || inputDD > 31 && inputMM < 1 || inputMM >12) {
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+            }
+
+
+            if(!inputDD && !inputMM && !inputYY) {
+                invalid.textContent = "This field is required";
+                invalides.textContent = "This field is required";
+                invalider.textContent = "This field is required";
+
+                return
+            }
+
+            if(!inputDD && !inputMM) {
+                invalid.textContent = "This field is required";
+                invalides.textContent = "This field is required";
+                return
+            }
+            
+            if(!inputDD && !inputYY) {
+                invalid.textContent = "This field is required";
+                invalider.textContent = "This field is required";
+                return
+            }
+
+                        
+            if(!inputMM && !inputYY) {
+                invalides.textContent = "This field is required";
+                invalider.textContent = "This field is required";
+                return
+            }
+    
+            if (!inputDD){
+                invalid.textContent = "This field is required";
+
+                return
+            }
+            if(!inputMM) {
+                invalides.textContent = "This field is required";
+                return
+            }
+             if(!inputYY) {
+                invalider.textContent = "This field is required";
+                return
+            }
+
+            if(inputDD.toString().length > 2){
                 invalid.textContent = "Must bb a valid date";
+
+                return
+            }
+
+            if( inputMM.toString().length > 2){
                 invalides.textContent = "Must bb a valid date";
+                return
+
+            }
+
+            
+            if (inputDD > dd && inputMM > mm && inputYY == yy ) {
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                invalider.textContent = "Must be a valid date";
+                return
+            }  
+
+            if (inputDD > dd && inputMM > mm && inputYY > yy ) {
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                invalider.textContent = "Must be a valid date";
+                return
+            }  
+
+
+            if (inputYY < 1800 || inputYY > yy ) {
+
+                invalider.textContent = "Must be a valid date";
+
+                return
+            }   
+
+            if (inputMM > mm && inputYY >= yy ) {
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                invalider.textContent = "Must be a valid date";
+                return
+            }  
+
+            if (inputDD == dd && inputMM == mm && inputYY == yy ) {
+                invalid.textContent = "Must be a valid date";
+                invalides.textContent = "Must be a valid date";
+                invalider.textContent = "Must be a valid date";
+
+                return
+            }  
+
+            if(inputMM == 2 && inputDD > 28 ){
+                invalid.textContent = "Must bb a valid date";
 
                 date.textContent = "--";
                 month.textContent =  "--";
                 year.textContent =  "--";
                 return
             }
+
+            if(inputYY.toString().length !== 4){
+                invalider.textContent = "Must bb a valid date";
+
+                date.textContent = "--";
+                month.textContent =  "--";
+                year.textContent =  "--";
+                return
+
+            }
+
+
+
+
 
             invalid.textContent = "";
             invalides.textContent = "";
@@ -98,6 +214,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         } ; 
 
         validation();
+
+ 
 
 
 

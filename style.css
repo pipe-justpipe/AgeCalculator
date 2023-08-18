@@ -165,8 +165,10 @@ span {
     /* Adjust font sizes for smaller screens */
     .txt,
     .text {
-        font-size: 30px;
-        color: red;
+        font-size: 50px;
+        color: purple;
+        text-decoration: line-through;
+        
     }
 
     /* Adjust font size for smaller screens */

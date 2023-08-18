@@ -133,7 +133,7 @@ span {
     .main {
         width: 90%;
         height: 50vh; /* Increase height for smaller screens */
-        margin: 20% auto 20% auto;
+        margin: 30% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
     }
@@ -147,22 +147,28 @@ span {
     }
 
     h4 {
-        width: 25%;
+        width: 20%;
         margin:0.5em ;
         margin-left: 0;
     }
     
     input{
-        width: 25%;
+        width: 20%;
         padding:10px ;
         border: 1px solid var(--Light-grey);
         border-radius: 10px;
         color: var(--Smokey-grey);
-        font-size: var(--big);
+        font-size: 20px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+}
+hr{
+    width: 65%;
+}
+img{
+    left: 50%;
 }
     /* Adjust font sizes for smaller screens */
     .txt,

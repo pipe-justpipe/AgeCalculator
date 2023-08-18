@@ -143,10 +143,7 @@ span {
         /*Increaseheightforsmallerscreens*/margin: 25% auto;
         border-radius: 40px;
         border-bottom-right-radius:100px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
+
 }
 
     form{

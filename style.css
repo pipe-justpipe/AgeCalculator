@@ -173,7 +173,7 @@ span {
     display: block;
     position: absolute;
     align-self: center;
-    width: 80%;
+    width: 100%;
     margin: 0;
     padding: 0;
     color: var(--Light-grey);
@@ -203,16 +203,16 @@ span {
     }
 
     input{
-    width: 15%;
-    padding:0px;
+    width: 12%;
+    padding:5px;
     border: 1px solid var(--Light-grey);
-    border-radius:10px;
+    border-radius:5px;
     color: var(--Smokey-grey);
     font-size: 4px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
 }
 
     .txt,

@@ -157,15 +157,13 @@ span {
         border-radius: 10px;
         color: var(--Smokey-grey);
         font-size: var(--big);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+    
 }
     /* Adjust font sizes for smaller screens */
     .txt,
     .text {
-        font-size: 40px;
+        font-size: 10px;
+        color: red;
     }
 
     /* Adjust font size for smaller screens */

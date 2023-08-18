@@ -81,7 +81,7 @@ img{
 }
 .btn {
     width: 6%;
-    /Adjustwidthforresponsiveness/background-color: var(--purple);
+    background-color: var(--purple);
     border-radius: 3em;
     padding: 1em;
     -webkit-border-radius: 3em;
@@ -132,7 +132,7 @@ span {
 @media (max-width: 576px) {
     .main {
         width: 90%;
-        height: 70vh; /* Increase height for smaller screens */
+        height: 65vh; /* Increase height for smaller screens */
         margin: 20% auto;
     }
 
@@ -157,15 +157,15 @@ span {
         border-radius: 10px;
         color: var(--Smokey-grey);
         font-size: var(--big);
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
 }
     /* Adjust font sizes for smaller screens */
     .txt,
     .text {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     /* Adjust font size for smaller screens */
@@ -255,10 +255,6 @@ span {
         margin-bottom: 10%;
         height: 60vh;
         padding-bottom: 0;
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
 }
     #all{
         padding: 2%;
@@ -290,10 +286,6 @@ span {
         border-radius: 10px;
         color: var(--Smokey-grey);
         font-size: var(--big);
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
 }
     /* Adjust font sizes for large screens */
 

@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (isFutureDate(inputDD, inputMM, inputYY)) {
             showErrorMessages(
                 inputDD > todayDate.getDate() || inputMM > todayDate.getMonth() + 1 || inputYY > todayDate.getFullYear()
-                    ? "The date is in future"
+                    ? "The date is in the future"
                     : "",
                 "The date is in the future",
                 "The date is in the future"

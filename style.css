@@ -276,6 +276,10 @@ span {
     font-weight: bold;
     outline: none; 
 }
+input:hover {
+    border: 1px solid var(--purple);
+    color: black;
+}
     .txt,
     .text {
     font-size: 50px;
@@ -330,6 +334,10 @@ span {
         font-weight: bold;
         outline: none; 
     }
+    input:hover {
+        border: 1px solid var(--purple);
+        color: black;
+    }
 
     .txt,
     .text {
@@ -374,6 +382,10 @@ span {
         font-weight: bold;
         outline: none; 
     }
+    input:hover {
+        border: 1px solid var(--purple);
+        color: black;
+    }
 
     hr {
         width: 80%;
@@ -398,6 +410,10 @@ span {
         margin-bottom: 10%;
         height: auto;
         padding-bottom: 0;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
 }
     #all{
         padding: 2%;
@@ -437,10 +453,10 @@ span {
         border-radius: 10px;
         color: var(--Smokey-grey);
         font-size: var(--big);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+        /* -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:; */
 }
 .input:focus {
     border: 1px solid var(--purple);
@@ -448,6 +464,12 @@ span {
     box-shadow: 0 0 5px var(--purple); 
     font-weight: bold;
     outline: none; 
+}
+
+input:hover {
+    border: 1px solid var(--purple);
+    color: black;
+    cursor: pointer;
 }
     .txt,
     .text {

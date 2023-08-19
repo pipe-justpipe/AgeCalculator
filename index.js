@@ -55,13 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function changeTextColor(valid) {
+        const textCol = document.querySelectorAll('label');
+        textCol.forEach(label => {
+            label.style.color = valid ? 'initial' : 'red';
+        });
+        
         const inpute = document.querySelectorAll('input');
         inpute.forEach(input => {
             const inputIsEmpty = input.value.trim() === '';
             input.style.color = inputIsEmpty ? 'var(--Smokey-grey)' : 'black';
-            input.style.fontWeight = 'bold';
+            input.style.fontWeight = inputIsEmpty ? 'normal' : 'bold';
         });
     }
+    
 
     button.addEventListener('click', () => {
         const inputDD = parseInt(inputD.value);
@@ -135,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputYY < 1800 || inputYY > yy ? "Must be a valid year" : ""
             );
 
+            // Additional error messages for specific months
             if ([2].includes(inputMM) && inputDD > 28) {
                 showErrorMessages("Must be a valid date", "", "");
             }
@@ -184,56 +191,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
- /*const isRequired = !inputDD || !inputMM || !inputYY;
-        const isReq1 = !inputDD;
-        const isReq2 = !inputMM;
-        const isReq3 = !inputYY;
-        const isInvalidDate = !isValidDate(inputDD, inputMM, inputYY);
-        const isInvalid1 = isInvalidDate.getUTCDate();
-        const isInvalid2 = isInvalidDate.getUTCMonth();
-        const isInvalid3 = isInvalidDate.getUTCFullYear();
-
-    
-        if (isRequired) {
-            showErrorMessages("This field is required", "This field is required", "This field is required");
-            changeBorderColor(false);
-            changeTextColor(false);
-        
-         if (!isReq1){
-            showErrorMessages("Must be a valid day", "", "");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-         if (!isReq2) {
-            showErrorMessages("", "Must be a valid month", "");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-         if (!isReq3) {
-            showErrorMessages("", "Must be a valid month", "");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-        }
-        else if (isInvalidDate) {
-            showErrorMessages("Must be a valid day", "Must be a valid month", "Must be a valid year");
-            changeBorderColor(false);
-            changeTextColor(false);
-        
-            if (isInvalid1) {
-            showErrorMessages("Must be a valid day", "", "");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-            if (isInvalid2) {
-            showErrorMessages("", "Must be a valid month", "");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-            if (isInvalid3) {
-            showErrorMessages("", "", "Must be a valid year");
-            changeBorderColor(false);
-            changeTextColor(false);
-            }
-        }*/

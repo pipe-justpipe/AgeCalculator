@@ -94,6 +94,10 @@ input:hover {
     outline: none !important; 
 }
 
+.input:not(:focus) {
+    border-color: var(--Light-grey) !important;
+}
+
 .input:active {
     border: 1.5px solid var(--purple);
 }
@@ -269,6 +273,10 @@ span {
     outline: none !important; 
 }
 
+.input:not(:focus) {
+    border-color: var(--Light-grey) !important;
+}
+
 .input:active {
     border: 1px solid var(--purple);
     color: black;
@@ -334,6 +342,10 @@ input:hover {
         font-weight: bold;
         outline: none; 
     }
+
+    .input:not(:focus) {
+        border-color: var(--Light-grey) !important;
+    }
     input:hover {
         border: 1px solid var(--purple);
         color: black;
@@ -381,6 +393,10 @@ input:hover {
         box-shadow: 0 0 5px var(--purple); 
         font-weight: bold;
         outline: none; 
+    }
+
+    .input:not(:focus) {
+        border-color: var(--Light-grey) !important;
     }
     input:hover {
         border: 1px solid var(--purple);
@@ -464,6 +480,10 @@ input:hover {
     box-shadow: 0 0 5px var(--purple); 
     font-weight: bold;
     outline: none; 
+}
+
+.input:not(:focus) {
+    border-color: var(--Light-grey) !important;
 }
 
 input:hover {

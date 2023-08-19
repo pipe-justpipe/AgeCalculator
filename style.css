@@ -313,6 +313,14 @@ span {
         
     }
   
+    .input:focus {
+        border: 1px solid var(--purple);
+        color: black;
+        box-shadow: 0 0 5px var(--purple); 
+        font-weight: bold;
+        outline: none; 
+    }
+
     .txt,
     .text {
         font-size: 80px;
@@ -348,6 +356,13 @@ span {
 
     .sectionA {
         width: 75%;
+    }
+    .input:focus {
+        border: 1px solid var(--purple);
+        color: black;
+        box-shadow: 0 0 5px var(--purple); 
+        font-weight: bold;
+        outline: none; 
     }
 
     hr {

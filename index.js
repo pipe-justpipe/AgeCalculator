@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputDD < 1 || inputDD > 31 ? "Must be a valid day" : "",
                 inputMM < 1 || inputMM > 12 ? "Must be a valid month" : "",
         
-                inputYY < 1800 || inputYY > yy ? "Must be a valid year" : ""
+                inputYY > yy ? "Must be in the past":inputYY < 1800? "Must be a valid year" : "",""
             );
 
             // Additional error messages for specific months

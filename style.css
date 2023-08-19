@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
-
 :root {
     --purple: hsl(259, 100%, 65%);
     --big: 32px;
@@ -86,6 +85,15 @@ input:hover {
     color: black;
     cursor: pointer;
 }
+
+.input:focus {
+    border: 1px solid var(--purple);
+    color: black;
+    box-shadow: 0 0 5px var(--purple); 
+    font-weight: bold;
+    outline: none; 
+}
+
 .input:active {
     border: 1.5px solid var(--purple);
 }
@@ -134,6 +142,24 @@ hr {
     width: 100%;
 }
 
+  
+@keyframes countUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .age-value-animation {
+    animation: countUp 5s ease forwards; /* Adjust duration as needed */
+  }
+
+
+
 p,
 strong,
 span {
@@ -144,6 +170,8 @@ span {
 
 .span{
     color: var(--Light-red);
+    font-style: italic;
+    font-size: small;
 }
 
 /* Media Queries for Different Screen Sizes */

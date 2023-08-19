@@ -55,9 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function changeTextColor(valid) {
-        const textCol = document.querySelectorAll('label');
-        textCol.forEach(label => {
-            label.style.color = valid ? 'initial' : 'red';
+        const inpute = document.querySelectorAll('input');
+        inpute.forEach(input => {
+            const inputIsEmpty = input.value.trim() === '';
+            input.style.color = inputIsEmpty ? 'var(--Smokey-grey)' : 'black';
+            input.style.fontWeight = 'bold';
         });
     }
 

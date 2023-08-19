@@ -262,11 +262,11 @@ span {
 }
 
 .input:focus {
-    border: 1px solid var(--purple);
-    color: black;
-    box-shadow: 0 0 5px var(--purple); 
-    font-weight: bold;
-    outline: none; 
+    border: 1px solid var(--purple) !important;
+    color: black !important;
+    box-shadow: 0 0 5px var(--purple) !important; 
+    font-weight: bold !important;
+    outline: none !important; 
 }
 
 .input:active {

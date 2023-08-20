@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function changeTextColor(valid) {
         const textCol = document.querySelectorAll('label');
         textCol.forEach(label => {
-            label.style.color = valid ? 'initial' : 'red';
+            label.style.color = valid ? 'var(--smokey-grey)' : 'red';
         });
         
         const inpute = document.querySelectorAll('input');

@@ -132,6 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 isMMRequired ? "This field is required" : "",
                 isYYRequired ? "This field is required" : ""
             );
+
+            localStorage.removeItem('ageDays');
+            localStorage.removeItem('ageMonths');
+            localStorage.removeItem('ageYears');
+            
+            updateAgeContent(); 
+            
             changeBorderColor(false);
             changeTextColor(false);
         } else if (!isValidDate(inputDD, inputMM, inputYY)) {
@@ -139,10 +146,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputDD < 1 || inputDD > 31 ? "Must be a valid day" : "",
                 inputMM < 1 || inputMM > 12 ? "Must be a valid month" : "",
         
-                inputYY > yy ? "Must be in the past":inputYY < 1800? "Must be a valid year" : "",""
+                inputYY > yy ? "Must be in the past" : inputYY < 1800 ? "Must be a valid year" : ""
             );
 
-            // Additional error messages for specific months
+            
+            localStorage.removeItem('ageDays');
+            localStorage.removeItem('ageMonths');
+            localStorage.removeItem('ageYears');
+            
+            updateAgeContent(); 
+            
+            
             if ([2].includes(inputMM) && inputDD > 28) {
                 showErrorMessages("Must be a valid date", "", "");
             }
@@ -169,6 +183,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 "The date is in the future",
                 "The date is in the future"
             );
+
+            
+            localStorage.removeItem('ageDays');
+            localStorage.removeItem('ageMonths');
+            localStorage.removeItem('ageYears');
+            
+            updateAgeContent(); 
+            
             changeBorderColor(false);
             changeTextColor(false);
         } else {
@@ -183,10 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('ageDays', age.days);
             localStorage.setItem('ageMonths', age.months);
             localStorage.setItem('ageYears', age.years);
-
-            // localStorage.setItem('inputDD', inputDD);
-            // localStorage.setItem('inputMM', inputMM);
-            // localStorage.setItem('inputYY', inputYY);
 
             updateAgeContent();
         }

@@ -58,6 +58,8 @@ form {
 label{
     width: max(33%); 
     margin:0.5em 0;
+    letter-spacing: 3px;
+    font-size: 12px;
     
 }
 
@@ -251,6 +253,8 @@ span {
     label{
     width: max(33%); 
     margin:0.5em 0;
+    letter-spacing: 3px;
+    font-size: 12px;
 
     }
 
@@ -276,7 +280,7 @@ span {
 }
 
 .input:not(:focus) {
-    border-color: var(--Light-grey) !important;
+    border-color: var(--Light-grey) ;
 }
 
 .input:active {
@@ -340,7 +344,8 @@ input:hover {
     label{
         width: max(33%); 
         margin:0.5em 0;
-        
+        letter-spacing: 3px;
+        font-size: 12px;
     }
   
     .input:focus {
@@ -352,7 +357,7 @@ input:hover {
     }
 
     .input:not(:focus) {
-        border-color: var(--Light-grey) !important;
+        border-color: var(--Light-grey) ;
     }
     input:hover {
         border: 1px solid var(--purple);
@@ -426,7 +431,7 @@ input:hover {
     }
 
     .input:not(:focus) {
-        border-color: var(--Light-grey) !important;
+        border-color: var(--Light-grey) ;
     }
     input:hover {
         border: 1px solid var(--purple);
@@ -497,6 +502,8 @@ input:hover {
     label{
         width: max(33%); 
         margin:0.5em 0;
+        letter-spacing: 3px;
+        font-size: 12px;
         
     }
 
@@ -529,7 +536,7 @@ input:hover {
 }
 
 .input:not(:focus) {
-    border-color: var(--Light-grey) !important;
+    border-color: var(--Light-grey) ;
 }
 
 input:hover {

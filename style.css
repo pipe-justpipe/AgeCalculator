@@ -259,10 +259,7 @@ span {
     border-radius:5px;
     color: var(--Smokey-grey);
     font-size: 4px;
-    /* -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:; */
+
 }
 
 .input:focus {
@@ -289,6 +286,10 @@ input:hover {
     color: black;
 }
 
+.btn{
+    background-color: var(--purple) !important;
+}
+
 .btn:hover {
     background-color: black !important;
 }
@@ -296,9 +297,7 @@ input:hover {
     .text {
     font-size: 50px;
     }
-    .btn:not(:hover) {
-        background-color: var(--purple) !important;
-    }
+
 
 }
 
@@ -355,6 +354,14 @@ input:hover {
     input:hover {
         border: 1px solid var(--purple);
         color: black;
+    }
+
+    .btn{
+        background-color: var(--purple) !important;
+    }
+    
+    .btn:hover {
+        background-color: black !important;
     }
 
     .txt,
@@ -414,6 +421,14 @@ input:hover {
         margin: 0;
         padding: 0;
         color: var(--Light-grey);
+    }
+
+    .btn{
+        background-color: var(--purple) !important;
+    }
+    
+    .btn:hover {
+        background-color: black !important;
     }
     
 }
@@ -479,6 +494,14 @@ input:hover {
         -moz-border-radius:;
         -ms-border-radius:;
         -o-border-radius:; */
+}
+
+.btn{
+    background-color: var(--purple) !important;
+}
+
+.btn:hover {
+    background-color: black !important;
 }
 .input:focus {
     border: 1px solid var(--purple);

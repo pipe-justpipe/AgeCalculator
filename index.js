@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function changeBorderColor(valid) {
         const inpute = document.querySelectorAll('input');
         inpute.forEach(input => {
-            input.style.borderColor = valid ? 'initial' : 'var(--Light-red)';
+            input.style.borderColor = valid ? 'var(--Light-grey)' : 'var(--Light-red)';
         });
     }
 

@@ -95,7 +95,7 @@ input:hover {
 }
 
 .input:not(:focus) {
-    border-color: var(--Light-grey) !important;
+    border-color: var(--Light-grey) ;
 }
 
 .input:active {
@@ -394,10 +394,16 @@ input:hover {
 
 @media (min-width: 1096px) and (max-width: 1496px) {
     .main {
-        width: 60%;
-        height: auto; 
-        margin: 20% auto;
-    }
+        width: 50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        
+    
+
+}
 
     .txt{
        padding-bottom:0.5em;
@@ -448,7 +454,7 @@ input:hover {
 @media (min-width: 840px) and (max-width:1096px) {
     .main{
         background-color:var(--white) ;
-        width: 80%;
+        width: 60%;
         padding-left: 30px;
         border-radius: 40px;
         border-bottom-right-radius:200px;

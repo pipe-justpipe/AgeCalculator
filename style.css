@@ -138,6 +138,8 @@ hr {
 .txt {
     font-size: var(--bigger);
     line-height: 1.1;
+    padding-bottom:0.5em;
+
 }
 
 .text {
@@ -259,7 +261,10 @@ span {
     border-radius:5px;
     color: var(--Smokey-grey);
     font-size: 4px;
-
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
 }
 
 .input:focus {
@@ -362,6 +367,10 @@ input:hover {
         background-color: black !important;
     }
 
+    .txt{
+        padding-bottom:0.5em;
+    }
+
     .txt,
     .text {
         font-size: 80px;
@@ -388,6 +397,10 @@ input:hover {
         width: 60%;
         height: auto; 
         margin: 20% auto;
+    }
+
+    .txt{
+       padding-bottom:0.5em;
     }
 
     .txt,
@@ -517,6 +530,10 @@ input:hover {
     border: 1px solid var(--purple);
     color: black;
     cursor: pointer;
+}
+
+.txt{
+    padding-bottom:0.5em;
 }
     .txt,
     .text {

@@ -67,8 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             input.style.fontWeight = inputIsEmpty ? 'normal' : 'bold';
         });
     }
-    //
-
+    
     button.addEventListener('click', () => {
         const inputDD = parseInt(inputD.value);
         const inputMM = parseInt(inputM.value);

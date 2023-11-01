@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             changeBorderColor(true);
             changeTextColor(true);
         });
-    });
+    });/////////////////////////////
 
     function updateAgeContent() {
         const date = document.querySelector('#dy');

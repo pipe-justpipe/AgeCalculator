@@ -6,7 +6,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 This is an Age Calculator app that allows users to calculate their age in years, months, and days based on their birthdate. The app provides validation for the input fields and displays error messages for invalid inputs.
 
-## Table of Contents
+##Table of Contents
 
 - [Overview](#overview)
   - [The Challenge](#the-challenge)

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputD = document.querySelector('#inputDD');
     const inputM = document.querySelector('#inputMM');
     const inputY = document.querySelector('#inputYY');
-
+// FGDH
     updateAgeContent();
 
     [inputD, inputM, inputY].forEach(input => {

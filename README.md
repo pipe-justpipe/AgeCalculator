@@ -23,7 +23,7 @@ This is an Age Calculator app that allows users to calculate their age in years,
 
 ### The Challenge
 
-The challenge was to create a user-friendly Age Calculator app that allows users to input their birthdate and calculates their age in years, months, and days. The app should also provide validation for the input fields to ensure that valid dates are entered.
+The challenge was tocreate a user-friendly Age Calculator app that allows users to input their birthdate and calculates their age in years, months, and days. The app should also provide validation for the input fields to ensure that valid dates are entered.
 
 
 ### Links
